@@ -1,17 +1,19 @@
-
-body{
+body {
   margin: 0;
   padding: 0;
+  background-color: #fdfffe;
+ 
 
 }
+
 
 .header {
   display: flex;
   align-items: center;
   justify-content: space-around;
-background-color: #dddddd;
+  background-color:rgb(22, 10, 124);
   margin: 0;
-  color: rgb(22, 10, 124);
+  color: white;
   padding: 0;
  
 }
@@ -42,12 +44,14 @@ background-color: #dddddd;
 
 .navbar a {
   text-decoration: none;
-  color: rgb(22, 10, 124);
-  font-size: 18px;
+  color: white;
+  font-size: 25px;
   margin-right: 20px;
 
 }
-
+h4{
+  color:#6a5f8a;
+}
 .navbar a::after {
   content: '';
   position: absolute;
@@ -63,22 +67,96 @@ background-color: #dddddd;
   width: 100%; 
 }
 .description {
-  position: relative; /* Position relative for absolute positioning */
+
  
-  justify-content: space-around;
+  justify-content: center;
+ display: flex;
  
+align-items: center;
+
+margin: 40px;
+
+
 
   padding: 0;
 }
 .description img{
-  width: 100%;
+  width: 30%;
+
+  
+
+
 }
 .title {
-  position: absolute;
-top: 10%;
-  left: 50%; /* Position at 50% from the left */
-  transform: translate(-50%, -20%); /* Center horizontally and vertically */
-  text-align: center; /* Center text */
+
   color: rgb(22, 10, 124);
   font-size: 30px;
+
+
+}
+.about-section{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
+}
+.about-section h1{
+  color: rgb(22, 10, 124);
+  font-size: 40px;
+
+}
+.about-section p{
+  font-size: 30px;
+
+ 
+}
+.reasons{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap:20px;
+  padding: 20px;
+  margin-top: 40px;
+  
+
+
+}
+.reason {
+  position: relative; /* Required for absolute positioning of the icon */
+  border: 2px solid black;
+  padding: 20px;
+  border-radius: 20px;
+  text-align: center; /* Center text horizontally */
+}
+
+.reason i {
+  position: absolute;
+  top: -30px; /* Adjust this value to fine-tune the vertical positioning */
+  left: 50%;
+  transform: translateX(-50%);
+  background-color:rgb(22, 10, 124);
+  color: white;
+  padding: 20px; /* Increase or decrease the padding to change the size of the icon */
+  font-size: 40px; 
+  border-radius: 50%; /* To make the background circular */
+}
+
+.reason h1 {
+  text-align: center;
+  padding-top: 20px;
+  font-size: 30px;
+}
+
+.services-section{
+  background-color: rgb(74, 188, 233);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 100px;
+}
+.services-section p{
+  font-size: 30px;
+
 }
