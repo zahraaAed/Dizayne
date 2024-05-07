@@ -1,0 +1,322 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #fdfffe;
+ 
+
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color:rgb(22, 10, 124);
+  margin: 0;
+  color: white;
+  padding: 0;
+ 
+}
+
+.header img {
+  width: 100px;
+}
+
+.branding {
+  display: flex;
+  align-items: center;
+}
+
+.get-in-touch {
+  border-radius: 10px;
+  width: 200px; /* Adjust width as needed */
+  font-size: 17px;
+  height: 40px; /* Adjust height as needed */
+  background-color: #ccc;
+  color: rgb(22, 10, 124);
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  text-align: center;
+}
+.get-intouch {
+  border-radius: 10px;
+  width: 200px; /* Adjust width as needed */
+  font-size: 17px;
+  height: 40px; 
+  background-color: #ccc;
+  color: rgb(22, 10, 124);
+  box-shadow: 0 4px 6px rgb(22, 10, 124); 
+  cursor: pointer;
+  text-align: center;
+  transition: background-color 0.3s ease;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: white;
+  font-size: 25px;
+  margin-right: 20px;
+  padding-right: 30px;
+  
+ 
+
+}
+h4{
+  color:#6a5f8a;
+}
+.navbar a::after {
+  content: '';
+  position: absolute;
+  bottom: -2px; 
+  left: 0;
+  width: 0;
+  height: 2px; 
+  background-color: #ffffff; 
+  transition: width 0.3s ease; 
+}
+
+.navbar a:hover::after {
+  width: 100%; 
+}
+.description {
+
+ 
+  justify-content: center;
+ display: flex;
+ 
+align-items: center;
+
+margin: 40px;
+
+
+
+  padding: 0;
+}
+.description img{
+  width: 30%;
+
+  
+
+
+}
+.title {
+
+  color: rgb(22, 10, 124);
+  font-size: 17px;
+  max-width: 760px;
+
+
+}
+.title p{
+  font-size: 20px;
+}
+.about-section{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 80px;
+}
+.about-section h1{
+  color: rgb(22, 10, 124);
+  font-size: 40px;
+
+}
+.about-section p{
+  font-size: 20px;
+  color:#3a383f;
+
+ 
+}
+.reasons {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  padding: 20px;
+  margin-top: 80px;
+}
+
+.reason {
+  flex: 0.2;
+  border-radius: 10px;
+  text-align: center;
+  padding: 20px;
+  background-color: #f9f9f9;
+  box-shadow: 0 4px 8px rgb(22, 10, 124);
+
+}
+
+
+.reason .fa-icon {
+  position: relative;
+  top: -50px;
+  background-color: rgb(22, 10, 124);
+  color: white;
+  padding: 20px;
+  font-size: 40px;
+  border-radius: 50%;
+
+}
+
+.reason h1 {
+ 
+  font-size: 30px;
+}
+
+.service-title{
+
+  flex: 0.2;
+  border-radius: 0 150px 150px 0; /* Border radius applied only to the right side */
+  text-align: center;
+  padding: 20px;
+  background-color: rgb(22, 10, 124);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow effect */
+  width: 70%;
+  margin-top: 80px;
+  color:white;
+  box-shadow: 0 12px 8px rgb(196, 194, 214);
+  margin-bottom: 80px;/* Add shadow effect */
+  
+}
+.service-title h4{
+  color: #f9f9f9;;
+  font-size: 20px;
+}
+.service-title h1{
+  color: #f9f9f9;;
+  font-size: 30px;
+}
+.services-section p{
+  font-size: 20px;
+
+}
+
+.services {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  text-align: center;
+  flex-wrap: wrap; /* Allows items to wrap onto the next line */
+  max-width: 1600px; /* Adjust max-width as needed */
+  margin: 0 auto; /* Center horizontally */
+}
+
+/* Adjustments for individual services */
+.service {
+  flex: 0 1 calc(33.33% - 40px); /* Three services per row */
+  margin: 20px;
+  background-color: #f9f9f9;
+  width: 500px;
+  border-radius: 15px;
+
+  height: 550px; /* Adjust spacing between services */
+}
+
+.service img {
+  max-width: 80%;
+  height: auto;
+}
+
+.service h2 {
+  font-size: 30px;
+  color: rgb(22, 10, 124);
+}
+
+.service p {
+  font-size: 20px;
+  padding: 0 10px 0 10px;
+  color: #3a383f;;
+}
+.contact-section {
+  background-color: rgb(22, 10, 124);
+  padding: 50px;
+  text-align: center;
+  margin-top: 80px;
+}
+
+.contact-content {
+  max-width: 600px;
+  margin: 0 auto;
+  color: #fff; /* Set text color to white */
+}
+
+.contact-section h2 {
+  font-family: Arial, sans-serif;
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.contact-section p {
+  font-family: Arial, sans-serif;
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.contact-info {
+  list-style-type: none;
+  padding: 0;
+}
+
+.contact-info li {
+  font-family: Arial, sans-serif;
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #fff; /* Set text color to white */
+}
+
+.contact-info li .fa-icon {
+  margin-right: 10px;
+  color: #fff; /* Set icon color to white */
+}
+
+.footer p{
+  text-align: center;
+  font-size: 20px;
+  color: #3a383f;
+}
+
+#contact-form {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 10px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #ccc;
+ 
+}
+
+input[type="text"]::placeholder,
+input[type="email"]::placeholder,
+textarea::placeholder {
+  color:  rgb(22, 10, 124);
+ 
+  font-size: 15px;
+}
+
+
+textarea {
+  height: 150px;
+}
+
+form button {
+  background-color: #ccc;
+  color: rgb(22, 10, 124);
+  border: none;
+
+  border-radius: 10px;
+  width: 200px; /* Adjust width as needed */
+  font-size: 17px;
+  height: 40px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  
+  text-align: center;
+
+}
+
