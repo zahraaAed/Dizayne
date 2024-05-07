@@ -6,7 +6,6 @@ body {
 
 }
 
-
 .header {
   display: flex;
   align-items: center;
@@ -30,22 +29,24 @@ body {
 .get-in-touch {
   border-radius: 10px;
   width: 200px; /* Adjust width as needed */
-  font-size: 20px;
+  font-size: 17px;
   height: 40px; /* Adjust height as needed */
   background-color: #ccc;
   color: rgb(22, 10, 124);
   cursor: pointer;
   transition: background-color 0.3s ease;
+  text-align: center;
 }
 .get-intouch {
   border-radius: 10px;
   width: 200px; /* Adjust width as needed */
-  font-size: 20px;
+  font-size: 17px;
   height: 40px; 
   background-color: #ccc;
   color: rgb(22, 10, 124);
   box-shadow: 0 4px 6px rgb(22, 10, 124); 
   cursor: pointer;
+  text-align: center;
   transition: background-color 0.3s ease;
 }
 
@@ -100,9 +101,13 @@ margin: 40px;
 .title {
 
   color: rgb(22, 10, 124);
-  font-size: 30px;
+  font-size: 17px;
+  max-width: 760px;
 
 
+}
+.title p{
+  font-size: 20px;
 }
 .about-section{
   display: flex;
@@ -136,12 +141,12 @@ margin: 40px;
   text-align: center;
   padding: 20px;
   background-color: #f9f9f9;
-  box-shadow: 0 4px 8px rgb(22, 10, 124); /* Add shadow effect */
+  box-shadow: 0 4px 8px rgb(22, 10, 124);
 
 }
 
 
-.reason i {
+.reason .fa-icon {
   position: relative;
   top: -50px;
   background-color: rgb(22, 10, 124);
@@ -149,6 +154,7 @@ margin: 40px;
   padding: 20px;
   font-size: 40px;
   border-radius: 50%;
+
 }
 
 .reason h1 {
@@ -173,10 +179,14 @@ margin: 40px;
 }
 .service-title h4{
   color: #f9f9f9;;
+  font-size: 20px;
+}
+.service-title h1{
+  color: #f9f9f9;;
   font-size: 30px;
 }
 .services-section p{
-  font-size: 30px;
+  font-size: 20px;
 
 }
 
@@ -226,8 +236,7 @@ margin: 40px;
 .contact-content {
   max-width: 600px;
   margin: 0 auto;
-  color: #f9f9f9;
-  
+  color: #fff; /* Set text color to white */
 }
 
 .contact-section h2 {
@@ -251,17 +260,20 @@ margin: 40px;
   font-family: Arial, sans-serif;
   font-size: 18px;
   margin-bottom: 10px;
+  color: #fff; /* Set text color to white */
 }
 
-.contact-info li i {
+.contact-info li .fa-icon {
   margin-right: 10px;
+  color: #fff; /* Set icon color to white */
 }
-
 
 .footer p{
   text-align: center;
   font-size: 20px;
+  color: #3a383f;
 }
+
 #contact-form {
   display: grid;
   grid-template-columns: 1fr;
@@ -275,21 +287,36 @@ textarea {
   padding: 10px;
   border: 1px solid #ccc;
   border-radius: 5px;
+  background-color: #ccc;
+ 
 }
+
+input[type="text"]::placeholder,
+input[type="email"]::placeholder,
+textarea::placeholder {
+  color:  rgb(22, 10, 124);
+ 
+  font-size: 15px;
+}
+
 
 textarea {
   height: 150px;
 }
 
-button {
+form button {
   background-color: #ccc;
   color: rgb(22, 10, 124);
   border: none;
-  padding: 10px 20px;
+
   border-radius: 10px;
   width: 200px; /* Adjust width as needed */
-  font-size: 20px;
+  font-size: 17px;
   height: 40px;
   cursor: pointer;
   transition: background-color 0.3s ease;
+  
+  text-align: center;
+
 }
+
