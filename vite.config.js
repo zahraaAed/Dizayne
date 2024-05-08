@@ -5,7 +5,7 @@ import react from '@vitejs/plugin-react'
 export default defineConfig({
   plugins: [react()],
   alias: {
-    '@fortawesome/free-solid-svg-icons': '@fortawesome/free-solid-svg-icons', // Ensure correct aliasing
+    '@fortawesome/free-solid-svg-icons': '@fortawesome/free-solid-svg-icons', 
   },
 })
 
