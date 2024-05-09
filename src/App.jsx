@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useRef } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faUsers,
@@ -17,7 +17,14 @@ import logodesign from "./assets/logodesign.png";
 import { faInstagram, faFacebook } from "@fortawesome/free-brands-svg-icons";
 import { faEnvelope } from "@fortawesome/free-regular-svg-icons";
 import featuresimage from "./assets/features.png";
+import { faBars, faTimes } from "@fortawesome/free-solid-svg-icons";
 function App() {
+  const navRef = useRef();
+
+  const showNavBar = () => {
+    navRef.current.classList.toggle("responsive_nav");
+    console.log("NavBar toggled");
+  };
   return (
     <>
       <div className="header">
@@ -25,13 +32,18 @@ function App() {
           <img src={logo} alt="Dizayne Agency Logo" />
           <h2>Dizayne Agency</h2>
         </div>
-
-        <div className="navbar">
+        <div className="navbar" ref={navRef}>
           <a href="#about">About</a>
           <a href="#services">Services</a>
           <a href="#contact">Contact</a>
         </div>
         <button className="get-in-touch">Get in Touch</button>
+        {/* <button className="nav-btn nav-close-btn" onClick={showNavBar}>
+        <FontAwesomeIcon icon={faTimes} />
+      </button>
+      <button className="nav-btn" onClick={showNavBar}>
+        <FontAwesomeIcon icon={faBars} />
+      </button> */}
       </div>
 
       <div className="description">
@@ -95,10 +107,10 @@ function App() {
       <div id="services" className="services-section">
         <div className="service-title">
           <h1>Our Services</h1>
-          <h4>
+          <p>
             Explore the range of services we offer to elevate your online
             presence
-          </h4>
+          </p>
         </div>
         <div className="services">
           <div className="service">
@@ -136,75 +148,69 @@ function App() {
           </div>
         </div>
         <div className="features-container">
-        <div className="container-features ">
-          <div className="line"></div>
-          <div className="word">Features & Benefits</div>
-          <div className="line"></div>
-        </div>
-        <div className="features">
-       
-          <div className="feature">
-          <h2>Features</h2>
-            <ul>
-              <li>Custom Web Design</li>
-              <li>Expert Web Development</li>
-              <li>Creative Logo Creation</li>
-              <li>Responsive Design</li>
-              <li>Unparalleled Customer Support</li>
-            </ul>
+          <div className="container-features ">
+            <div className="line"></div>
+            <div className="word">Features & Benefits</div>
+            <div className="line"></div>
           </div>
-         
-          <div className="feature">
-          <h2>Features</h2>
-            <ul>
-              <li>Elevated Online Presence</li>
-              <li>Enhanced User Experience</li>
-              <li>Optimized Functionality</li>
-              <li>Streamlined Brand Identity</li>
-              <li>Exceptional Value for Your Investment</li>
-            </ul>
+          <div className="features">
+            <div className="feature">
+              <h2>Features</h2>
+              <ul>
+                <li>Custom Web Design</li>
+                <li>Expert Web Development</li>
+                <li>Creative Logo Creation</li>
+                <li>Responsive Design</li>
+                <li>Unparalleled Customer Support</li>
+              </ul>
+            </div>
+
+            <div className="feature">
+              <h2>Features</h2>
+              <ul>
+                <li>Elevated Online Presence</li>
+                <li>Enhanced User Experience</li>
+                <li>Optimized Functionality</li>
+                <li>Streamlined Brand Identity</li>
+                <li>Exceptional Value for Your Investment</li>
+              </ul>
+            </div>
+            <img src={featuresimage} alt="featuresimage" />
           </div>
-          <img src={featuresimage} alt="featuresimage" />
         </div>
-      </div>
       </div>
 
+  
       <div id="contact" className="contact-section">
-        <div className="contact-content">
-          <h2>Contact Us</h2>
-          <p>
-            Get in touch with us to discuss your project or for any inquiries.
-          </p>
-          <ul className="contact-info">
-            <li>
-              <FontAwesomeIcon icon={faInstagram} className="icon" /> Instagram
-            </li>
-            <li>
-              <FontAwesomeIcon icon={faFacebook} className="icon" /> Facebook
-            </li>
-            <li>
-              <FontAwesomeIcon icon={faEnvelope} className="icon" />{" "}
-              dizayne-lb@gmail.com
-            </li>
-          </ul>
-
-          <form id="contact-form" method="post" action="contact.php">
-            <input type="text" name="name" placeholder="Your Name" required />
-            <input
-              type="email"
-              name="email"
-              placeholder="Your Email"
-              required
-            />
-            <textarea
-              name="message"
-              placeholder="Your Message"
-              required
-            ></textarea>
-            <button type="submit">Send Message</button>
-          </form>
-        </div>
+  <div className="contact-content">
+    <h2>Contact Us</h2>
+    <p>Get in touch with us to discuss your project or for any inquiries.</p>
+    <div className="content">
+      <div>
+        <form id="contact-form" method="post" action="contact.php">
+          <input type="text" name="name" placeholder="Your Name" required />
+          <input type="email" name="email" placeholder="Your Email" required />
+          <textarea name="message" placeholder="Your Message" required></textarea>
+          <button type="submit">Send Message</button>
+        </form>
       </div>
+      <div className="vertical-line"></div>
+      <div>
+        <ul className="contact-info">
+          <li>
+            <FontAwesomeIcon icon={faInstagram} className="icon" />Dizayne_lb
+          </li>
+          <li>
+            <FontAwesomeIcon icon={faFacebook} className="icon" />Dizayne_lb
+          </li>
+          <li>
+            <FontAwesomeIcon icon={faEnvelope} className="icon" /> dizayne-lb@gmail.com
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
 
       <div className="footer">
         <p>&copy; 2024 Dizayne Agency. All rights reserved.</p>
