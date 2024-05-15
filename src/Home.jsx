@@ -200,19 +200,28 @@ function Home() {
           <button type="submit">Send Message</button>
         </form>
       </div>
-      <div className="vertical-line"></div>
+     
       <div>
-        <ul className="contact-info">
-          <li>
-            <FontAwesomeIcon icon={faInstagram} className="icon" />Dizayne_lb
-          </li>
-          <li>
-            <FontAwesomeIcon icon={faFacebook} className="icon" />Dizayne_lb
-          </li>
-          <li>
-            <FontAwesomeIcon icon={faEnvelope} className="icon" /> dizayne-lb@gmail.com
-          </li>
-        </ul>
+      <ul className="contact-info">
+  <li>
+    <Link to="https://www.instagram.com/Dizayne_lb" target="_blank" rel="noopener noreferrer">
+      <FontAwesomeIcon icon={faInstagram} className="icon" />
+    </Link>
+
+  </li>
+  <li>
+    <Link to="https://www.facebook.com/Dizayne_lb" target="_blank" rel="noopener noreferrer">
+      <FontAwesomeIcon icon={faFacebook} className="icon" />
+    </Link>
+  
+  </li>
+  <li>
+    <Link to="mailto:dizayne-lb@gmail.com">
+      <FontAwesomeIcon icon={faEnvelope} className="icon" />
+    </Link>
+   
+  </li>
+</ul>
       </div>
     </div>
   </div>
