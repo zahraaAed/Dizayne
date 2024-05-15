@@ -10,7 +10,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  background-color:rgb(22, 10, 124);
+  background-color:rgb(155, 151, 192);
   margin: 0 auto;
   color: white;
   padding: 0;
@@ -60,6 +60,7 @@ body {
   text-align: center;
   margin-right: 20px;
   padding-right: 30px;
+  position: relative;
   
  
 
@@ -67,20 +68,32 @@ body {
 h4{
   color:#6a5f8a;
 }
+.navbar a:hover {
+  color:  rgb(22, 10, 124);
+}
 .navbar a::after {
   content: '';
   position: absolute;
-  bottom: -2px; 
+  width: 70%;
+  height: 2px;
+  bottom: 0;
   left: 0;
-  width: 0;
-  height: 2px; 
-  background-color: #ffffff; 
-  transition: width 0.3s ease; 
+  background-color: transparent;
+  visibility: hidden;
+  transform: scaleX(0);
+  transition: all 0.3s ease-in-out;
 }
 
-.navbar a:hover::after {
-  width: 100px;
+.read-more {
+color: rgb(155, 151, 192);
+text-align: right;
 }
+.navbar a:hover::after {
+  visibility: visible;
+  transform: scaleX(1);
+  background-color: rgb(22, 10, 124);
+}
+
 
 .description {
 
@@ -238,6 +251,7 @@ justify-content: center;
 gap: 100px;
 
 }
+
 .feature li {
 
 margin:0 0 20px 0;
