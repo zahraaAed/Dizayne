@@ -5,7 +5,7 @@ import Webdesign from './Webdesign';
 import Webdev from './Webdevelopment';
 import Logodesign from './LogoDesign';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Header from "./Header";
+import Header from "./components//Header.jsx";
 function App() {
   return (
     <div>

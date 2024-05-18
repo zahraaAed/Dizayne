@@ -1,0 +1,131 @@
+.contact-section {
+    background-color: rgb(22, 10, 124);
+    padding: 50px;
+    text-align: center;
+  
+  }
+  
+  .contact-content {
+  
+    margin: 0 auto;
+    color: #fff;
+  }
+  
+  .contact-section h2 {
+    font-family: Arial, sans-serif;
+    font-size: 30px;
+    margin-bottom: 20px;
+    font-weight: bold;
+  }
+  
+  .contact-section p {
+    font-family: Arial, sans-serif;
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+  
+  /* .content {
+    display: flex;
+    justify-content: center; 
+    gap: 200px;
+  
+    max-width: 1000px;
+    align-items: center; 
+    margin: 0 auto;
+  } */
+  
+  .contact-info {
+    list-style-type: none;
+    
+   
+    display: flex;
+    justify-content: flex-end;
+   gap: 20px;
+  width:  100%;
+    text-align: left;
+  
+   
+    margin: 0;
+    padding: 0;
+  
+  }
+  .contact-info .icon.fa-instagram {
+    color: #f71498; /* Instagram blue */
+  }
+  
+  .contact-info .icon.fa-facebook {
+    color: #789ceb; /* Facebook blue */
+  }
+  
+  .contact-info .icon.fa-envelope {
+    color: #db1111; /* Email icon default color */
+  }
+  
+  
+  .contact-info li {
+    font-family: Arial, sans-serif;
+    
+  
+   padding-bottom: 25px;
+  
+  }
+  
+  .contact-info li .icon {
+    margin-right: 10px;
+  padding-right: 20px;
+  
+  font-size:25px;
+   
+    
+  }
+  
+  #contact-form {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 10px;
+    width: 600px; 
+    margin: 0 auto; 
+    padding-top: 30px;
+  
+  }
+  
+  
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #ccc;
+   
+  }
+  
+  input[type="text"]::placeholder,
+  input[type="email"]::placeholder,
+  textarea::placeholder {
+    color:  rgb(22, 10, 124);
+   
+    font-size: 15px;
+  }
+  
+  
+  textarea {
+    height: 150px;
+  }
+  
+  form button {
+    border-radius: 10px;
+    width: 200px; 
+    font-size: 17px;
+    height: 40px; 
+    background-color: #ccc;
+    color: rgb(22, 10, 124);
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-align: center;
+    margin-top: 20px;
+    line-height: 18px;
+  
+  }
+  

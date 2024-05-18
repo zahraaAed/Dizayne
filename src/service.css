@@ -1,14 +1,32 @@
 .service-web {
+    padding: 0;
+    margin-bottom: 30px;
+    width: 203vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: 
+    url("assets/background.png"), 
+    url("assets/background.png"),
+    url("assets/background.png");
+  background-repeat: no-repeat, no-repeat;
+  background-size: 500px 500px, 300px 300px, 400px 400px;
+  background-position: 
+    top 100px left 40px, 
+     top 20px right 50px,
+    bottom 10px right 30px;
 
-padding: 0;
-margin: 0;
-width: 203vh;
-display: flex;
-flex-direction: column;
-align-items: center;
-justify-content: center;
 }
-
+  
+  
+.service-web h1{
+    color: rgb(22, 10, 124);
+margin-top: 40px;
+padding-bottom: 20px;
+    border-bottom: 3px solid rgb(22, 10, 124);
+    
+}
 .description-service{
  max-width: 1200px;
 
@@ -21,7 +39,7 @@ justify-content: center;
    }
    .description-service h2{
     padding-bottom: 20px;
-   
+ 
     
    }
 .service-web img{

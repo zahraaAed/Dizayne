@@ -5,7 +5,7 @@ function Webdev() {
   return (
     <div >
         <div className="service-web">
-      <h1>Web Design</h1>
+      <h1>Web Development</h1>
       <img src={webdev} alt="web development" />
       <div className="description-service">
       <h2>Description</h2>
