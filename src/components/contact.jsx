@@ -1,10 +1,25 @@
-import React from 'react';
+import { useRef } from "react";
+import emailjs from '@emailjs/browser';
+
 import "./contact.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faInstagram, faFacebook } from "@fortawesome/free-brands-svg-icons";
 import { faEnvelope } from "@fortawesome/free-regular-svg-icons";
 import { Link } from 'react-router-dom';
 function Contact() {
+    const form = useRef();
+
+    const sendEmail = (e) => {
+      e.preventDefault();
+  
+      emailjs.sendForm('service_1m07sjl', 'template_mk9g0yc', form.current, 'S5zeLnBSS1x_6khDh')
+        .then((result) => {
+          console.log(result.text);
+          alert("message sent successfully!");
+        }, (error) => {
+          console.log(error.text);
+        });
+    };
   return (
     <div>
             <div id="contact" className="contact-section">
@@ -13,9 +28,9 @@ function Contact() {
     <p>Get in touch with us to discuss your project or for any inquiries.</p>
     <div className="content">
       <div>
-        <form id="contact-form" method="post" action="contact.php">
-          <input type="text" name="name" placeholder="Your Name" required />
-          <input type="email" name="email" placeholder="Your Email" required />
+        <form id="contact-form" method="post" action="contact.php" ref={form} onSubmit={sendEmail}>
+          <input type="text" name="user_name" placeholder="Your Name" required />
+          <input type="email" name="user_email" placeholder="Your Email" required />
           <textarea name="message" placeholder="Your Message" required></textarea>
           <button type="submit">Send Message</button>
         </form>
