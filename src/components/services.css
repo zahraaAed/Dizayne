@@ -158,6 +158,7 @@
         .features{
           display: flex;
           flex-direction: column;
+         
         
         }
        
@@ -176,7 +177,7 @@ margin: 23px;
           width: 300px;
         }
         .service-title{
-          max-width: 60%;
+          max-width: 70%;
         }
      
       }
@@ -184,7 +185,7 @@ margin: 23px;
 
       @media (max-width: 769px){
 .container-features{
-  max-width:80%;
+  width:100%;
   display: flex;
 
  
@@ -209,5 +210,6 @@ height: 300px;
 margin: 0;
 padding: 0;   
 }
+
 
       }
