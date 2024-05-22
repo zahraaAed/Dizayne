@@ -165,3 +165,30 @@ background: linear-gradient(30deg,#a598ec,rgb(22, 10, 124),  rgb(22, 10, 124), #
   padding-top: 20px;
   color: rgb(22, 10, 124);
 }
+
+@media (max-width: 701px) {
+  .description {
+    flex-direction: column;
+    align-items: center;
+  
+    justify-content: center;
+    padding: 20px;
+    width: 45%;
+  }
+
+  .description .title {
+    max-width: 100%;
+  }
+
+  .description h1 {
+    font-size: 25px;
+  }
+
+  .description p {
+    font-size: 20px;
+  }
+
+  .description img {
+    width: 100%;
+  }
+}
