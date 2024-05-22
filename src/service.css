@@ -69,3 +69,48 @@ font-size: 20px;
 .service-web p{
     font-size: 20px;
 }
+
+@media (max-width: 1473px)  {
+    .description-service{
+       width: 40rem;
+       
+        
+       }
+}
+@media (max-width: 1251px) {
+    .description-service{
+       width: 35rem;
+       
+        
+       }
+       .service-web{
+
+background-image: none;
+margin: 40px;
+align-items: flex-start;
+       }
+       .service-web h1{
+        text-align: center;
+      
+       }
+       .service-web img{
+        width: 30%;
+        margin: 0;
+    }
+    .description-service p{
+       font-size: 20px;
+       
+        
+       }
+}
+@media (max-width: 1251px) {
+    .description-service{
+       width: 25rem;
+       
+        
+       }
+       .service-web img{
+        width: 20%;
+        margin: 0;
+    }
+    }
