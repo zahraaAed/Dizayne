@@ -79,7 +79,7 @@ font-size: 20px;
 }
 @media (max-width: 1251px) {
     .description-service{
-       width: 35rem;
+       width: 45rem;
        
         
        }
@@ -97,13 +97,9 @@ align-items: flex-start;
         width: 30%;
         margin: 0;
     }
-    .description-service p{
-       font-size: 20px;
-       
-        
-       }
+  
 }
-@media (max-width: 1251px) {
+@media (max-width: 700px) {
     .description-service{
        width: 25rem;
        
@@ -113,4 +109,9 @@ align-items: flex-start;
         width: 20%;
         margin: 0;
     }
+    .description-service p{
+        font-size: 20px;
+        
+         
+        }
     }
