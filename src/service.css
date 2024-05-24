@@ -25,6 +25,9 @@
 margin-top: 40px;
 padding-bottom: 20px;
     border-bottom: 3px solid rgb(22, 10, 124);
+    text-align: center !important;
+
+    display: block; 
     
 }
 .description-service{
@@ -76,10 +79,15 @@ font-size: 20px;
        
         
        }
+       .service-web{
+
+      
+        margin: 40px;
+       }
 }
 @media (max-width: 1251px) {
     .description-service{
-       width: 45rem;
+       width: 60rem;
        
         
        }
@@ -90,7 +98,9 @@ margin: 40px;
 align-items: flex-start;
        }
        .service-web h1{
-        text-align: center;
+        text-align: center !important;
+        margin: 0; /* Reset margin if needed */
+        display: block; 
       
        }
        .service-web img{
@@ -99,11 +109,17 @@ align-items: flex-start;
     }
   
 }
+
 @media (max-width: 700px) {
     .description-service{
-       width: 25rem;
+       width: 20rem;
        
         
+       }
+       .service-web h1{
+        font-size: 30px;
+    
+      
        }
        .service-web img{
         width: 20%;
@@ -115,3 +131,12 @@ align-items: flex-start;
          
         }
     }
+
+    @media (max-width: 1000px) and (min-width:700px)  {
+        .description-service{
+           width: 40rem;
+           
+            
+           }
+        
+        }

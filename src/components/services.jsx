@@ -45,6 +45,7 @@ function Services() {
               We create innovative and user-friendly app designs for a seamless
               experience
             </p>
+            <Link to="/appdesign" className="read-more" onClick={() => window.scrollTo(0, 0)} >Read More</Link>
           </div>
           <div className="service">
             <img src={logodesign} alt="logo design" />
