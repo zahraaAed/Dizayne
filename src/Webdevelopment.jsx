@@ -1,9 +1,11 @@
 import React from "react";
 import "./service.css";
 import webdev from "./assets/webdev.png";
+import Navbar from "./components/Navbar";
 function Webdev() {
   return (
     <div >
+      <Navbar/>
         <div className="service-web">
       <h1>Web Development</h1>
       <img src={webdev} alt="web development" />

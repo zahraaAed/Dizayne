@@ -2,6 +2,7 @@
     color: rgb(155, 151, 192);
     text-align: right;
     }
+
 .service-title{
 
         flex: 0.2;
@@ -17,6 +18,11 @@
         box-shadow: 0 12px 8px rgb(196, 194, 214);
         margin-bottom: 80px;/* Add shadow effect */
         
+      }
+      .service:hover {
+        transform: scale(1.1);
+    
+       
       }
       .features-container{
         background-color:  #f9f9f9;

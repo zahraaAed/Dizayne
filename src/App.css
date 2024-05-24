@@ -1,12 +1,11 @@
-body {
+ body {
   margin: 0;
   padding: 0;
-  /* background-color: #fdfffe; */
-background-color: #e4eee9;
- background-color: #f9f9f9;;
 
-}
-.header {
+ background-color:#f9f9f9;
+
+} 
+/* .header {
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -15,28 +14,28 @@ background-color:  rgb(22, 10, 124);
   color: #f9f9f9;;
   padding: 10px;
  
-}
+} */
 
-.header img {
+/* .header img {
   width: 70px;
-}
+} */
 
-.branding {
+/* .branding {
   display: flex;
   align-items: center;
   justify-content: center;
 
-}
-.branding h2 {
+} */
+/* .branding h2 {
   font-size: 20px;
 }
 
 .branding h2 span {
-  margin-right: 10px; /* Adjust the margin as needed */
-}
+  margin-right: 10px; 
+} */
 
 
-.get-in-touch {
+/* .get-in-touch {
   border-radius: 10px;
   width: 200px; 
   font-size: 17px;
@@ -47,7 +46,7 @@ background-color:  rgb(22, 10, 124);
   transition: background-color 0.3s ease;
   text-align: center;
   line-height: 20px; 
-}
+} */
 
 .get-intouch {
   border-radius: 10px;
@@ -63,7 +62,7 @@ background-color:  rgb(22, 10, 124);
   line-height: 18px; 
 }
 
-.navbar a {
+/* .navbar a {
   text-decoration: none;
   color: #f9f9f9;;
   font-size: 20px;
@@ -75,14 +74,14 @@ background-color:  rgb(22, 10, 124);
   
  
 
-}
+} */
 h4{
   color:#6a5f8a;
 }
-.navbar a:hover {
+/* .navbar a:hover {
   color:  rgb(22, 10, 124);
-}
-.navbar a::after {
+} */
+/* .navbar a::after {
   content: '';
   position: absolute;
   width: 75%;
@@ -93,30 +92,16 @@ h4{
   visibility: hidden;
   transform: scaleX(0);
   transition: all 0.3s ease-in-out;
-}
+} */
 
 
-.navbar a:hover::after {
+/* .navbar a:hover::after {
   visibility: visible;
   transform: scaleX(1);
   background-color: rgb(22, 10, 124);
-}
-.nav-btn {
-  display: none;
-}
+} */
 
 
-.horizontal-line-container {
-  display: flex;
-  justify-content: center;
-}
-
-.horizontal-line {
-  width: 90%; /* Adjust the width as needed */
-  height: 2px; /* Adjust the height as needed */
-  background-color: rgb(58, 80, 202); /* Adjust the color as needed */
-  margin: 15px 0 10px; /* Adjust the margin as needed */
-}
 
 
 .description {
@@ -203,4 +188,4 @@ background: linear-gradient(30deg,#a598ec,rgb(22, 10, 124),  rgb(22, 10, 124), #
     font-size: 15px;
   }
 
-}
+} 

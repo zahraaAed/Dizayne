@@ -1,9 +1,11 @@
 import React from "react";
 import webdesign from "./assets/webdesign.png";
 import "./service.css";
+import Navbar from "./components/Navbar";
 function Webdesign() {
   return (
     <div>
+      <div className="nav-service"> <Navbar/> </div>
        <div className="service-web">
       <h1>Web Design</h1>
       <img src={webdesign} alt="web design" />

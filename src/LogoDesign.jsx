@@ -1,9 +1,11 @@
 import React from "react";
 import logodesign from "./assets/logodesign.png";
 import "./service.css";
+import Navbar from "./components/Navbar";
 function Logodesign() {
   return (
     <div>
+      <Navbar/>
        <div className="service-web">
       <h1>Logo Design</h1>
       <img src={logodesign} alt="logo design" />

@@ -1,9 +1,11 @@
 import React from "react";
 import appdesign from "./assets/appdesign.png";
 import "./service.css";
+import Navbar from "./components/Navbar";
 function Appdesign() {
   return (
     <div>
+      <Navbar/>
       <div className="service-web">
         <h1>App Design</h1>
         <img src={appdesign} alt="app design" />

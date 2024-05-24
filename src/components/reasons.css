@@ -9,6 +9,7 @@
     color: rgb(22, 10, 124);
     font-size: 40px;
   padding: 4px;
+  text-align: center;
   
   }
   .about-title{
@@ -39,10 +40,14 @@
     padding: 20px;
     background-color: #f9f9f9;
     box-shadow: 0 4px 8px rgb(22, 10, 124);
+    cursor: pointer;
   
   }
-  
-  
+  .reason:hover {
+    transform: scale(1.14);
+
+   
+  }
   .reason .fa-icon {
     position: relative;
     top: -50px;
@@ -60,12 +65,14 @@
     font-size: 25px;
     font-weight: bolder;
   }
-  
+    
+
   .reason p {
    
     font-size: 20px;
     padding-top: 10px;
   }
+
   @media (max-width: 1683px){
     .reason{
 width: 300px;
@@ -99,7 +106,7 @@ width: 200px;
   }
   @media (min-width: 500px) and (max-width: 842px){
     .about-section{
-      max-width: 70%;
+      max-width: 80%;
       margin-left: 100px;
     }
 .reason{
@@ -112,7 +119,8 @@ width: 100%;
     display: flex;
     align-items: flex-start;
     padding: 10px;
-    margin: 15px;
+    margin: 20px;
+
   }
     .reasons{
 
@@ -120,16 +128,22 @@ display: flex;
 
 flex-direction: column;
 
+
     }
     .reason{
 
      max-width: 300px;
       
           }
-          .about-title h1{
-            font-size: 30px;
+          .about-title {
+            font-size: 22px;
             text-align: center;
             margin: 30px;
+          padding-left: 30px;
+          margin-left: 20px;
+          width: 100%;
+          margin: 0 auto;
+     
           
           }
   }

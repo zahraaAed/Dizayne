@@ -1,7 +1,7 @@
 .service-web {
     padding: 0;
     margin-bottom: 30px;
-    width: 203vh;
+    width: 100vw;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -15,23 +15,34 @@
   background-position: 
     top 100px left 40px, 
      top 20px right 50px,
-    bottom 10px right 30px;
+    bottom 10px right 5px;
 
 }
   
+
   
-.service-web h1{
+.service-web h1 {
     color: rgb(22, 10, 124);
-margin-top: 40px;
-padding-bottom: 20px;
-    border-bottom: 3px solid rgb(22, 10, 124);
+    margin-top: 60px;
     text-align: center !important;
-
-    display: block; 
+    display: block;
     
-}
+    /* Typography and Spacing Enhancements */
+    font-size: 2.5rem; /* Makes the heading more prominent */
+    font-weight: bold; /* Emphasizes the heading */
+    padding-bottom: 10px; /* Adds space for the bottom border */
+    letter-spacing: 1px; /* Adds a bit of spacing between letters */
+    
+    /* Visual Emphasis */
+    border-bottom: 6px solid rgb(22, 10, 124); /* Uncommented for visual emphasis */
+    
+    /* Shadow Enhancement */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Adds a subtle shadow */
+  }
+  
 .description-service{
  max-width: 1200px;
+
 
  
 }
@@ -42,6 +53,9 @@ padding-bottom: 20px;
    }
    .description-service h2{
     padding-bottom: 20px;
+    display: block;
+    padding-top: 20px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
  
     
    }
@@ -104,7 +118,7 @@ align-items: flex-start;
       
        }
        .service-web img{
-        width: 30%;
+        width: 70%;
         margin: 0;
     }
   
@@ -122,8 +136,8 @@ align-items: flex-start;
       
        }
        .service-web img{
-        width: 20%;
-        margin: 0;
+        width: 70%;
+        margin: 0 20px;
     }
     .description-service p{
         font-size: 20px;
