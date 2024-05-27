@@ -2,7 +2,9 @@
     color: rgb(155, 151, 192);
     text-align: right;
     }
-
+.services-section{
+width: 100vw;
+}
 .service-title{
 
         flex: 0.2;

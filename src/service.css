@@ -18,9 +18,38 @@
     bottom 10px right 5px;
 
 }
-  
+  .description-service-info{
+    display: flex;
+    justify-content: space-between;
 
+    padding: 10px;
+  }
   
+.contact-service-button {
+    border-radius: 10px;
+    width:20%; 
+    font-size: 20px;
+    height: 40px;
+    background-color: #1140db;
+    color:#f9f9f9;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-align: center;
+    margin-top: 20px;
+    line-height: 18px;
+   
+}
+
+.contact-service-button .contact-link {
+    text-decoration: none;
+    color:#f9f9f9;
+    display: block; /* Ensures the link fills the button */
+
+    height: 100%;
+    text-align: center; /* Center the text */
+    
+  }
 .service-web h1 {
     color: rgb(22, 10, 124);
     margin-top: 60px;
@@ -93,6 +122,11 @@ font-size: 20px;
        
         
        }
+       .description-service-info button{
+        width: 40%;
+        font-size: 16px;
+        margin-bottom: 20px;
+      }
        .service-web{
 
       
@@ -105,6 +139,18 @@ font-size: 20px;
        
         
        }
+       .description-service-info{
+      
+     
+        /* flex-direction: column; */
+        width: 100%;
+        justify-content: space-between;
+      }
+      .description-service-info button{
+        width: 40%;
+        font-size: 13px;
+        margin-bottom: 20px;
+      }
        .service-web{
 
 background-image: none;
@@ -126,7 +172,7 @@ align-items: flex-start;
 
 @media (max-width: 700px) {
     .description-service{
-       width: 20rem;
+       width: 18rem;
        
         
        }

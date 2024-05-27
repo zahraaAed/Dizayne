@@ -2,6 +2,7 @@ import React from "react";
 import logodesign from "./assets/logodesign.png";
 import "./service.css";
 import Navbar from "./components/Navbar";
+import { Link } from "react-router-dom";
 function Logodesign() {
   return (
     <div>
@@ -10,7 +11,12 @@ function Logodesign() {
       <h1>Logo Design</h1>
       <img src={logodesign} alt="logo design" />
       <div className="description-service">
-        <h2>Description</h2>
+      <div className="description-service-info">
+      <h2>Description</h2>
+      <button className="contact-service-button ">
+        <Link to="/contact" className="contact-link">Contact Us</Link>
+      </button>
+      </div>
         <p>
           Your logo is the visual representation of your brand. At Dizayne
           Agency, we understand the importance of a well-designed logo that

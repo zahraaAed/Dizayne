@@ -1,0 +1,168 @@
+/* Main Contact Section */
+.main-contact {
+  background: linear-gradient(30deg, #a598ec, rgb(22, 10, 124), rgb(22, 10, 124), #ccc);
+  min-height: 100vh; /* Set minimum height to cover entire viewport */
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  width: 100vw;
+}
+
+/* Contact Section Styles */
+.contact-section {
+  padding: 50px; /* Padding around the contact section */
+  text-align: center;
+
+  width: 50%; 
+  background-color: #f9f9f9;
+}
+
+/* Contact Content */
+.contact-content {
+  margin: 0 auto; /* Center content */
+  color:rgb(22, 10, 124);
+  padding-bottom: 70px;
+}
+
+/* Contact Section Titles */
+.contact-section h2 {
+  font-family: Arial, sans-serif;
+  font-size: 30px;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.contact-section p {
+  font-family: Arial, sans-serif;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+/* Contact Form Styles */
+#contact-form {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 10px;
+  margin: 0 auto;
+  padding-top: 30px;
+  max-width: 700px; /* Limit width of the form */
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 2px solid  #1140db;
+  border-radius: 5px;
+  background-color: #f9f9f9; /* Light background color */
+}
+
+input[type="text"]::placeholder,
+input[type="email"]::placeholder,
+textarea::placeholder {
+  color: rgb(22, 10, 124);
+  font-size: 15px;
+}
+
+textarea {
+  height: 150px;
+}
+
+form button {
+  border-radius: 10px;
+  width: 100%; /* Full width button */
+  font-size: 17px;
+  height: 40px;
+  background-color: rgb(22, 10, 124);
+  color:#f9f9f9;;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  text-align: center;
+  margin-top: 20px;
+  line-height: 18px;
+  border: 2px solid #1140db;
+}
+
+/* Contact Info Icons */
+.contact-info {
+  list-style-type: none;
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  gap: 20px;
+  width: 100%;
+  text-align: left;
+  margin: 0;
+  padding-top: 50px;
+}
+
+.contact-info .icon.fa-instagram {
+  color: #ee1995; /* Instagram color */
+}
+
+.contact-info .icon.fa-facebook {
+  color: rgb(85, 73, 196); /* Facebook color */
+}
+
+.contact-info .icon.fa-envelope {
+  color: #db1111; /* Email icon color */
+}
+
+.contact-info li {
+  padding-bottom: 25px; /* Spacing between icons */
+}
+
+.contact-info li .icon {
+  margin-right: 10px;
+  padding-right: 20px;
+  font-size: 35px;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 786px) {
+  .contact-section {
+    padding: 20px;
+    width: 70%;
+  }
+
+  .contact-content h2 {
+    padding-top: 15px;
+  }
+
+  #contact-form {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: left;
+  }
+
+  .contact-info {
+    padding-top: 40px;
+    display: flex;
+    justify-content: center; /* Centers items horizontally */
+    align-items: center;
+    padding-left: 40px;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #ccc;
+  }
+  .contact-info li .icon {
+    margin-right: 10px;
+    padding-right: 20px;
+    font-size: 25px;
+  }
+  form button {
+    border-radius: 10px;
+    width: 100%; /* Full width button */
+    font-size: 14px;
+  }
+  
+}

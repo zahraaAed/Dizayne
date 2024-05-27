@@ -1,0 +1,113 @@
+/* Footer Container */
+.bg-content {
+    background: linear-gradient(30deg, #a598ec, rgb(22, 10, 124), rgb(22, 10, 124), #ccc);
+    min-height: 500px; /* Ensure a minimum height for content visibility */
+  }
+
+  /* Footer Styles */
+  .footer {
+    text-align: center;
+    padding: 2rem 0; /* Increase padding for better spacing */
+    color: #fff;
+    font-size: 1rem;
+  }
+  
+  /* Logo and Agency Name */
+  .container-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px 20px ; /* Adjust margin as needed */
+    font-size: 0.7rem; /* Increase font size for better readability */
+  }
+  
+  .logo {
+    width: 4rem;
+    height: auto;
+    margin-right: 10px; /* Adjust spacing between logo and text */
+  }
+  
+  /* Main Container */
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start; /* Align items at the top */
+    padding: 0 2rem; /* Adjust horizontal padding */
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  /* Grid Layout for Sections */
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+  
+  @media (min-width: 768px) {
+    .grid {
+      grid-template-columns: repeat(3, 1fr); /* Responsive grid layout */
+      gap: 2rem;
+    }
+  }
+  
+  /* Section Styling */
+  .info, .links, .contact {
+    margin: 0 auto; /* Center content in each section */
+  }
+  
+  /* Section Titles */
+  .title {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #fff;
+  }
+  
+  /* Divider Styles */
+  .divider {
+    margin: 0.5rem 0;
+    border: 1px solid #fff; /* Adjust border thickness */
+  }
+  
+  /* Footer Bottom */
+  .footer-bottom {
+    margin-top: 4rem;
+    padding: 1rem;
+    padding-top: 20px;
+    font-size: large;
+    text-align: center;
+    color: rgb(22, 10, 124);
+    background-color:#f9f9f9; /* Red background color */
+  }
+  .contact-footer {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 20px;
+    width: 300px;
+}
+
+.contact-footer li a {
+    color: white;
+    
+}
+
+
+.contact-footer li .icon {
+    font-size: 18px;
+    padding-right: 10px;
+}
+
+.contact-footer .fa-instagram {
+    color: #ee1995; /* Instagram color */
+}
+
+.contact-footer .fa-facebook {
+    color: rgb(85, 73, 196); /* Facebook color */
+}
+
+.contact-footer .fa-envelope {
+    color: #db1111; /* Email icon color */
+}

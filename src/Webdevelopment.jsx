@@ -2,6 +2,7 @@ import React from "react";
 import "./service.css";
 import webdev from "./assets/webdev.png";
 import Navbar from "./components/Navbar";
+import { Link } from "react-router-dom";
 function Webdev() {
   return (
     <div >
@@ -10,7 +11,12 @@ function Webdev() {
       <h1>Web Development</h1>
       <img src={webdev} alt="web development" />
       <div className="description-service">
+      <div className="description-service-info">
       <h2>Description</h2>
+      <button className="contact-service-button ">
+        <Link to="/contact" className="contact-link">Contact Us</Link>
+      </button>
+      </div>
      
         
          <p>

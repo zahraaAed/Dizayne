@@ -8,10 +8,12 @@ import homeimage from "./assets/homeimage.png";
 import Navbar from "./components/Navbar.jsx";
 
 import { Link } from 'react-router-dom';
-import Contact from "./components/contact.jsx";
+import Contact from "./pages/contact";
 import Services from "./components/services.jsx";
 import Reasons from "./components/reasons.jsx";
 
+import Footer from "./components/Footer";
+import CarouselComponent from "./components/test";
 function Home() {
 
 
@@ -30,18 +32,21 @@ function Home() {
             development, coupled with our logo creation services, will elevate
             your online presence.
           </p>
-          <button className="get-intouch">Get in touch</button>
+          <button className="get-intouch">
+      <Link to="/contact" className="contact-link">Get in touch</Link>
+    </button>
         </div>
         <img src={homeimage} alt="Dizayne Agency Logo" />
       </div>
 
       <Reasons />
       <Services />
-      <Contact />
+    
+      <Footer/>
 
-      <div className="footer">
+      {/* <div className="footer-rights">
         <p>&copy; 2024 Dizayne Agency. All rights reserved.</p>
-      </div>
+      </div> */}
     </div>
   );
 }

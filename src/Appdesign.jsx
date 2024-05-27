@@ -2,6 +2,7 @@ import React from "react";
 import appdesign from "./assets/appdesign.png";
 import "./service.css";
 import Navbar from "./components/Navbar";
+import { Link } from "react-router-dom";
 function Appdesign() {
   return (
     <div>
@@ -10,7 +11,12 @@ function Appdesign() {
         <h1>App Design</h1>
         <img src={appdesign} alt="app design" />
         <div className="description-service">
-          <h2>Description</h2>
+        <div className="description-service-info">
+      <h2>Description</h2>
+      <button className="contact-service-button ">
+        <Link to="/contact" className="contact-link">Contact Us</Link>
+      </button>
+      </div>
           <p>
             At Dizayne Agency, we understand the importance of a well-designed
             app that not only looks great but also delivers an exceptional user

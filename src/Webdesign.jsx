@@ -2,6 +2,7 @@ import React from "react";
 import webdesign from "./assets/webdesign.png";
 import "./service.css";
 import Navbar from "./components/Navbar";
+import { Link } from "react-router-dom";
 function Webdesign() {
   return (
     <div>
@@ -10,7 +11,12 @@ function Webdesign() {
       <h1>Web Design</h1>
       <img src={webdesign} alt="web design" />
       <div className="description-service">
+        <div className="description-service-info">
       <h2>Description</h2>
+      <button className="contact-service-button ">
+        <Link to="/contact" className="contact-link">Contact Us</Link>
+      </button>
+      </div>
       <p>
         At Dizayne Agency, we understand the importance of a well-designed
         website that not only looks great but also delivers exceptional user
@@ -51,12 +57,14 @@ function Webdesign() {
           truly represents your brand and resonates with your target audience.
           <a>Contact us today to get started.</a>
         </p>
+    
       </ul>
     </div>
     </div>
     <div className="Our Work">
     
     </div>
+   
     </div>
 
   );
