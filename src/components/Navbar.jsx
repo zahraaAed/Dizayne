@@ -50,9 +50,10 @@ function Navbar() {
               </div>
             )}
           </div>
-          <a href="/contact" onClick={closeNav}>
-            Contact
-          </a>
+      
+          <HashLink smooth to="/contact"  onClick={closeNav}>
+                  Contact
+                </HashLink>
           <button className="nav-btn nav-close-btn" onClick={closeNav}>
             <FontAwesomeIcon icon={faTimes} />
           </button>
