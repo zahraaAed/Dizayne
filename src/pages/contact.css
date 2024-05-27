@@ -8,6 +8,9 @@
   align-items: center; /* Center vertically */
   width: 100vw;
 }
+.branding{
+  width: auto;
+}
 .branding img{
   width: 100px;
 }
