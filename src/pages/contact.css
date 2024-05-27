@@ -1,7 +1,7 @@
 /* Main Contact Section */
 .main-contact {
   background: linear-gradient(30deg, #a598ec, rgb(22, 10, 124), rgb(22, 10, 124), #ccc);
-  min-height: 100vh; /* Set minimum height to cover entire viewport */
+  min-height: 100vh; 
   display: flex;
   justify-content: center; /* Center horizontally */
   align-items: center; /* Center vertically */
@@ -123,7 +123,7 @@ form button {
 @media (max-width: 786px) {
   .contact-section {
     padding: 20px;
-    width: 70%;
+    width: 80%;
   }
 
   .contact-content h2 {
@@ -131,7 +131,7 @@ form button {
   }
 
   #contact-form {
-    width: 80%;
+    width: 90%;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
