@@ -55,7 +55,7 @@
     margin-top: 60px;
     text-align: center !important;
     display: block;
-    
+    width: auto;
     /* Typography and Spacing Enhancements */
     font-size: 2.5rem; /* Makes the heading more prominent */
     font-weight: bold; /* Emphasizes the heading */
@@ -131,6 +131,7 @@ font-size: 20px;
 
       
         margin: 40px;
+        width: -webkit-fill-available;
        }
 }
 @media (max-width: 1251px) {
@@ -147,15 +148,20 @@ font-size: 20px;
         justify-content: space-between;
       }
       .description-service-info button{
-        width: 40%;
-        font-size: 13px;
+        width: 70%;
+        height: 20%;
+        font-size: 14px;
         margin-bottom: 20px;
+        margin-left: 60px;
+        font-weight: bold;
+       
       }
        .service-web{
 
 background-image: none;
 margin: 40px;
 align-items: flex-start;
+width: -webkit-fill-available;
        }
        .service-web h1{
         text-align: center !important;
@@ -190,6 +196,7 @@ align-items: flex-start;
         
          
         }
+        
     }
 
     @media (max-width: 1000px) and (min-width:700px)  {
