@@ -3,13 +3,22 @@
   background: linear-gradient(30deg, #a598ec, rgb(22, 10, 124), rgb(22, 10, 124), #ccc);
   min-height: 100vh; 
   display: flex;
+  flex-direction: column;
   justify-content: center; /* Center horizontally */
   align-items: center; /* Center vertically */
   width: 100vw;
 }
+.branding img{
+  width: 100px;
+}
+.branding h2{
+  color: #f9f9f9;
+
+}
 
 /* Contact Section Styles */
 .contact-section {
+  margin-top: 20px;
   padding: 50px; /* Padding around the contact section */
   text-align: center;
 

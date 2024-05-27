@@ -1,4 +1,6 @@
 import { useRef, useState } from "react";
+import { HashLink } from 'react-router-hash-link';
+
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars, faTimes, faAngleDown } from "@fortawesome/free-solid-svg-icons";
 import logo from "../assets/logo.png";
@@ -21,18 +23,19 @@ function Navbar() {
     <div className="heading">
       <header>
         <div className="branding">
-          <Link to="/" onClick={closeNav}>
-            <img src={logo} alt="Dizayne Agency Logo" />
-          </Link>
+         
+          <HashLink to="/" onClick={closeNav}>
+          <img src={logo} alt="Dizayne Agency Logo" />
+        </HashLink>
           <h2>
             <span>Dizayne </span> <span>Agency</span>
           </h2>
         </div>
         <div className="spacer"></div>
         <nav ref={navRef}>
-          <a href="#about" onClick={closeNav}>
-            About
-          </a>
+        <HashLink smooth to="/#about" onClick={closeNav}>
+          About
+        </HashLink>
           <div className="dropdown">
           <a  onClick={toggleDropdown}>
               Services <FontAwesomeIcon icon={faAngleDown} className="dropdown-icon"/>
@@ -47,7 +50,7 @@ function Navbar() {
               </div>
             )}
           </div>
-          <a href="#contact" onClick={closeNav}>
+          <a href="/contact" onClick={closeNav}>
             Contact
           </a>
           <button className="nav-btn nav-close-btn" onClick={closeNav}>

@@ -3,6 +3,8 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faInstagram, faFacebook } from "@fortawesome/free-brands-svg-icons";
 import { faEnvelope } from "@fortawesome/free-regular-svg-icons";
 import Logo from "../assets/logo.png";
+import { HashLink } from 'react-router-hash-link';
+
 import "./Footer.css";
 
 const Footer = () => {
@@ -39,19 +41,20 @@ const Footer = () => {
               <h6 className="title">Useful links</h6>
               <hr className="divider" />
               <p>
-                <Link to={"/reasons"} className="text-white">
-                  About
-                </Link>
+             
+                <HashLink smooth to="/#about" className="text-white">
+          About
+        </HashLink>
               </p>
               <p>
-                <Link to={"/services"} className="text-white">
+                <HashLink smooth to="/#services" className="text-white">
                   Services
-                </Link>
+                </HashLink>
               </p>
               <p>
-                <Link to={"/contact"} className="text-white">
+                <HashLink smooth to="/contact" className="text-white">
                   Contact
-                </Link>
+                </HashLink>
               </p>
             </div>
 

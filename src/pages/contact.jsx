@@ -4,6 +4,8 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faInstagram, faFacebook } from "@fortawesome/free-brands-svg-icons";
 import { faEnvelope } from "@fortawesome/free-regular-svg-icons";
 import { Link } from 'react-router-dom';
+import logo from "../assets/logo.png";
+import { HashLink } from 'react-router-hash-link';
 import "./contact.css";
 
 function Contact() {
@@ -23,6 +25,16 @@ function Contact() {
 
   return (
     <div className="main-contact">
+           <div className="branding">
+         
+         <HashLink to="/" >
+         <img src={logo} alt="Dizayne Agency Logo" />
+       </HashLink>
+         <h2>
+           <span>Dizayne </span> <span>Agency</span>
+         </h2>
+       </div>
+
       <div id="contact" className="contact-section">
         <div className="contact-content">
           <h2>Contact Us</h2>
