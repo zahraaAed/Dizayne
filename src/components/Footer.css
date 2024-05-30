@@ -82,11 +82,12 @@
   .contact-footer {
     list-style-type: none;
     display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
-    gap: 20px;
+   
+    justify-content: center;
+    align-items:center;
+    gap: 3rem;
     width: 300px;
+    padding-top: 30px;
 }
 
 .contact-footer li a {
@@ -96,7 +97,7 @@
 
 
 .contact-footer li .icon {
-    font-size: 18px;
+    font-size: 25px;
     padding-right: 10px;
 }
 

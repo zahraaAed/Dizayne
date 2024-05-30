@@ -1,4 +1,4 @@
-.about-section{
+/* .about-section{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -17,6 +17,7 @@
     font-size: 40px;
     padding-bottom: 10px;
     border-bottom: 3px solid rgb(22, 10, 124);
+    text-align: center;
   }
   .about-section p{
     font-size: 20px;
@@ -29,7 +30,7 @@
     justify-content: center;
     align-items: center;
     gap: 40px;
-    padding: 70px;
+ 
     margin-top: 80px;
   }
   
@@ -87,6 +88,7 @@ width: 200px;
     }
     .about-section{
       max-width: 70%;
+      margin: auto;
       margin-left: 100px;
      
           }
@@ -152,4 +154,111 @@ padding-right: 6px;
      
           
           }
-  }
+  } */
+  .about-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 80px;
+    
+}
+
+.about-section h1 {
+    color: rgb(22, 10, 124);
+    font-size: 40px;
+    padding: 4px;
+    text-align: center;
+}
+
+
+.about-section p {
+    font-size: 20px;
+    color: #3a383f;
+}
+.about-title::after {
+  content: "";
+  display: block;
+  width: 100%;
+ margin: auto;
+  height: 3px;
+  background-color: rgb(22, 10, 124);
+}
+.reasons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+    flex-wrap: wrap;
+    gap: 40px;
+    margin-top: 80px;
+    width: 80%;
+}
+
+.reason {
+    flex: 1;
+    width: 400px;
+    height: auto;
+    border-radius: 10px;
+    text-align: center;
+    padding: 20px;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 8px rgb(22, 10, 124);
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.reason:hover {
+    transform: scale(1.05);
+}
+
+.reason .fa-icon {
+  position: relative;
+  top: -50px;
+  background-color: rgb(22, 10, 124);
+  color: white;
+  padding: 20px;
+  margin: 0;
+  font-size: 40px;
+  border-radius: 50%;
+  width: auto;
+}
+
+.reason h1 {
+    font-size: 25px;
+    font-weight: bolder;
+}
+
+.reason p {
+    font-size: 20px;
+    padding-top: 10px;
+}
+
+@media (max-width: 900px) {
+    .reason {
+        width: 80%;
+        max-width: none;
+        height: auto;
+    }
+}
+@media (max-width: 500px){
+
+
+    .reasons{
+
+display: flex;
+
+flex-direction: column;
+
+
+
+    }
+    .about-title::after {
+      content: "";
+      display: block;
+      width: 80%;
+     margin: auto;
+      height: 3px;
+      background-color: rgb(22, 10, 124);
+    }
+    }

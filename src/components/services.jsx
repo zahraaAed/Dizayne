@@ -61,7 +61,7 @@ function Services() {
             ref={refWebDesign}
             initial={{ scale: 0 }}
             animate={inViewWebDesign ? { scale: 1 } : {}}
-            transition={{ duration: 2 }}
+            transition={{ duration:0.5 }}
             className="service"
           >
             <img src={webdesign} alt="web design" />
@@ -78,14 +78,14 @@ function Services() {
             ref={refWebDev}
             initial={{ scale: 0 }}
             animate={inViewWebDev ? { scale: 1 } : {}}
-            transition={{ duration: 2 }}
+            transition={{ duration: 0.5 }}
             className="service"
           >
             <img src={webdev} alt="web development" />
             <h2>Web Development</h2>
             <p>
               We are experts in developing custom websites that are
-              high-performing, secure, and optimized for search engines.
+              high-performing, secure, and optimized for SEO friendly.
             </p>
             <Link to="/webdev" className="read-more" onClick={() => window.scrollTo(0, 0)}>Read More</Link>
           </motion.div>
@@ -94,7 +94,7 @@ function Services() {
             ref={refAppDesign}
             initial={{ scale: 0 }}
             animate={inViewAppDesign ? { scale: 1 } : {}}
-            transition={{ duration: 2 }}
+            transition={{ duration: 0.5 }}
             className="service"
           >
             <img src={appdesign} alt="app design" />
@@ -110,7 +110,7 @@ function Services() {
             ref={refLogoDesign}
             initial={{ scale: 0 }}
             animate={inViewLogoDesign ? { scale: 1 } : {}}
-            transition={{ duration: 2 }}
+            transition={{ duration: 0.5 }}
             className="service"
           >
             <img src={logodesign} alt="logo design" />
@@ -148,7 +148,7 @@ function Services() {
             </div>
 
             <div className="feature">
-              <h2>Features</h2>
+              <h2>Benefits</h2>
               <ul>
                 <li>Elevated Online Presence</li>
                 <li>Enhanced User Experience</li>

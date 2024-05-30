@@ -19,7 +19,7 @@ function Reasons() {
          animate={{ scale: 1 }}
          transition={{ duration: 1 }}
     >
-          <h1>Why To Choose Us!</h1>
+          <h1>Why Choose Us!</h1>
           </motion.div>
         </div>
         <div className="reasons">

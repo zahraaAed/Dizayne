@@ -60,7 +60,7 @@ const Footer = () => {
 
             {/* Contact Section */}
             <div className="contact">
-              <h6 className="title">Contact</h6>
+              <h6 className="title">Get in Touch</h6>
               <hr className="divider" />
               <ul className="contact-footer">
                 <li>
@@ -70,7 +70,7 @@ const Footer = () => {
                     rel="noopener noreferrer"
                   >
                     <FontAwesomeIcon icon={faInstagram} className="icon" />{" "}
-                    Dizayne-lb
+                    
                   </a>
                 </li>
                 <li>
@@ -80,13 +80,13 @@ const Footer = () => {
                     rel="noopener noreferrer"
                   >
                     <FontAwesomeIcon icon={faFacebook} className="icon" />{" "}
-                    Dizayne-lb
+                
                   </a>
                 </li>
                 <li>
                   <a href="mailto:dizayne-lb@gmail.com">
                     <FontAwesomeIcon icon={faEnvelope} className="icon" />{" "}
-                    Dizayne.lb@gmail.com
+                   
                   </a>
                 </li>
               </ul>

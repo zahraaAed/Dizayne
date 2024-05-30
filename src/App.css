@@ -181,6 +181,8 @@ h4{
     justify-content: center;
    
     width:85%;
+    margin: auto;
+    margin-top: 40px;
   }
 
   .description .title {
@@ -205,9 +207,11 @@ h4{
   }
   * {
     padding: 0;
-    margin: 0;
+    margin: 0 ;
     box-sizing: border-box;
     width: -webkit-fill-available;
+
   }
+
   
 } 

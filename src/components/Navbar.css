@@ -31,7 +31,7 @@ header {
 }
 
 header img {
-  width: 70px;
+  width: 80px !important;
 }
 
 nav {
@@ -174,7 +174,7 @@ header .nav-btn {
 
   header .responsive_nav {
     transform: none;
-
+z-index: 1;
       transform: none;
       padding: initial;
       margin: initial;
